@@ -1,0 +1,177 @@
+/*
+Ritip Karkee
+style.css
+03/05/2021
+*/
+/* This css is used to style and better look to the entire website */
+
+/*changing the profile image to responsive image*/
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* changing the webpage back ground color*/
+body {
+    background-color: lightgrey;
+  }
+
+
+  /* adjusting the menu and removing the bullets*/
+.menu {
+    height: 50px;
+    display: block;
+    font-family: Helvetica;
+    }
+ /* Adding color and padding to the menu option*/
+    li {float: left;
+    list-style-type:none;
+   
+    }
+    /* this changes the color of the footer as well as the menu options for all webpages*/
+    a {display: block;
+    text-decoration: none;
+    color:black;
+    padding: 15px 15px 15px 15px;  
+    /* added border to the nav menu */
+    border-radius: 25px; 
+    overflow: hidden;
+    background-color: lightgreen;
+  }
+  /*added hover pseudo class for the menu nagivation icons. the light green chanbges to dark green when the cursor is placed */
+  div :hover {
+    background-color:darkgreen;
+  }
+
+    /* editing the main part of the index.html. changing font*/
+   main{
+    font-family: 'Lobster', cursive;
+   } 
+   
+   /* For mobile phones: */
+   [class*="me"] {
+     width: 100%;
+   }
+   @media only screen and (min-width: 100%) {
+    /* For tablets: */
+    .me {width: 100%;} }
+
+    /* elements for the image of figure of ritipkarkee*/
+    figure {
+      float: center;
+      width: 30%;
+      text-align: center;
+      font-style: italic;
+      font-size: smaller;
+      text-indent: 0;
+      border: thin silver solid;
+      margin: 0.5em;
+      padding: 0.5em;
+    }
+    /* added grid to the contact page*/
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color:lightgray;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    /* added shadow and shaodw color to headline*/
+  h1{
+    text-shadow: 2px 2px gold;
+
+    /*added able in about me page and edited the table to show different color as per odd and even. also made several rows and columns */
+  }
+  /* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+/* style sheet for form which is located in the contact section of the webpage*/
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
